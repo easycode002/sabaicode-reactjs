@@ -30,3 +30,21 @@ module.exports = {
 ```
 npm run test
 ```
+
+#### To be install `React Fast Marquee` the project
+> [!NOTE]
+> React Fast Marquee is a lightweight React component that harnesses the power of CSS animations to create silky smooth marquees.
+###### Installation
+If you're using npm, in the command prompt run:
+```
+npm install react-fast-marquee --save
+```
+If you're using yarn, run:
+```
+yarn add react-fast-marquee
+```
+###### Usage marquee
+To use the component, first import Marquee into your file:
+```
+import Marquee from "react-fast-marquee";
+```
