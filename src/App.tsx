@@ -1,19 +1,17 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import LayoutPage from "./components/organisms/layouts-non-login/LayoutPage";
-import SkeletonPage from "./pages/SkeletonPage/SkeletonPage";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import MainLayout from './components/organisms/layout/MainLayout'
+import MarqueeAnimationPage from './pages/animation-marquee/MarqueeAnimationPage'
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        {/* for layout non-login */}
-        <Route path="/" element={<LayoutPage />}>
-          {/* page skeleton */}
-          <Route path="skeleton" element={<SkeletonPage />} />
-        </Route>
-      </Routes>
+        <Routes>
+            <Route path='/' element={<MainLayout/>}>
+                <Route path='animation-marquee' element={<MarqueeAnimationPage/>}/>
+            </Route>
+        </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App; 
+export default App
